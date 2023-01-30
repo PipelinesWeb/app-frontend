@@ -15,7 +15,7 @@ env:
 jobs:
 
   build-test:
-    name: Build application and run tests
+    name: Build app and run tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -38,7 +38,7 @@ jobs:
       run: npm run build
       
   deploy-production:
-    name: Deploy to production - Vercel
+    name: Deploy to production Vercel
     needs: build-test
     runs-on: ubuntu-latest
     steps:
