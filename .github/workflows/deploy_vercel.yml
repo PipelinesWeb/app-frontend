@@ -1,4 +1,4 @@
-name: CI/CD
+name: Deploy app
 
 on:
   workflow_dispatch:
