@@ -4,9 +4,11 @@ on:
   workflow_dispatch:
     # Enable manual run
   push:
-    branches: [ "develop", "main" ]
+    branches: [ "develop" ]
   pull_request:
-    branches: [ "develop", "main" ]
+    branches: [ "develop" ]
+  workflow_call:
+    # 
 
 jobs:
 
