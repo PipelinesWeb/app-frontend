@@ -3,13 +3,16 @@ name: Deploy Vercel
 on:
   workflow_dispatch:
     # Enable manual run
-  workflow_run:
-    workflows: ["Tests"]
-    types:
-      - completed
+  push:
+    branches: [ "main" ]
+  pull_request:
     branches: [ "main" ]
     
 jobs:
+  
+  build-test:
+    name: Run Tests
+    uses: ./.github/workflows/tests.yml
 
   deploy-production:
     name: Deploy to production Vercel
