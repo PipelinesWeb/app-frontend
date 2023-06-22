@@ -8,7 +8,7 @@ on:
   pull_request:
     branches: [ "develop" ]
   workflow_call:
-    # 
+    # Activate execution from another workflow
 
 jobs:
 
@@ -31,6 +31,3 @@ jobs:
 
     - name: Run the tests
       run: npm test
-
-    - name: Build
-      run: npm run build
