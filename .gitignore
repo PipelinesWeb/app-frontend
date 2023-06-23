@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+# Ignorar videos y capturas de pantalla generados por Cypress
+cypress/videos/
+cypress/screenshots/
+
 # next.js
 /.next/
 /out/
