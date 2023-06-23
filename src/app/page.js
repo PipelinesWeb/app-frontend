@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <form className="w-64 mx-auto">
       <div className="my-2">
-        <label htmlFor="material-name" className="block">Nombre del material</label>
+        <label htmlFor="material-name" className="block">Nombre del material:</label>
         <input
           type="text"
           id="material-name"
@@ -13,7 +13,7 @@ export default function Home() {
       </div>
   
       <div className="my-2">
-        <label htmlFor="material-quantity" className="block">Cantidad</label>
+        <label htmlFor="material-quantity" className="block">Cantidad:</label>
         <input
           type="number"
           id="material-quantity"
