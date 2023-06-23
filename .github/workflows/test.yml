@@ -26,5 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Start server
+        run: npm start -- --port 3000 &
+
+      - name: Wait for server to start
+        run: sleep 10s
+
       - name: Run Cypress tests
         run: npm run cypress:run
