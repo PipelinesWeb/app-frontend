@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Start server
-        run: npm start -- --port 3000 &
+        run: npm run dev &
 
       - name: Wait for server to start
         run: sleep 10s
